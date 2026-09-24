@@ -33,5 +33,5 @@ Pour consulter le guide détaillé étape par étape sur la création et la séc
 
 * `README.md` : Présentation du projet.
 * `GUIDE.md` : Guide détaillé pour obtenir et configurer les clés API.
-* `.env.example` : Modèle de configuration exemple pour Git.
+* `.env.example` : Modèle de configuration exemple.
 * `.gitignore` : Protection des fichiers sensibles.
