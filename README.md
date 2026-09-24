@@ -17,7 +17,7 @@ Dupliquez le fichier d'exemple et renseignez vos clés dans votre fichier `.env`
 cp .env.example .env
 ```
 
-Pour consulter le guide détaillé étape par étape sur la création et la sécurité des clés API, consultez **[GUIDE.md](./GUIDE.md)**.
+Pour consulter le guide détaillé étape par étape sur la création et la sécurité des clés API, consultez **[GUIDE.md](GUIDE.md)**.
 
 ---
 
