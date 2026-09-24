@@ -1,0 +1,14 @@
+# Fichiers d'environnement contenant des clés API privées
+.env
+
+# Environnements virtuels
+venv/
+.venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Config éditeur
+.vscode/
+.DS_Store
