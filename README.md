@@ -23,9 +23,9 @@ Pour consulter le guide détaillé étape par étape sur la création et la séc
 
 ## Exécution des scripts
 
-* **Google Gemini** : `python count_prompts_Flash38.py`
-* **Anthropic Claude** : `python count_prompts_Opus5.py`
-* **OpenAI ChatGPT** : `python count_prompts_Sol56.py`
+* **Google Gemini** : `python count_tokens_Flash38.py`
+* **Anthropic Claude** : `python count_tokens_Opus5.py`
+* **OpenAI ChatGPT** : `python count_tokens_Sol56.py`
 
 ---
 
