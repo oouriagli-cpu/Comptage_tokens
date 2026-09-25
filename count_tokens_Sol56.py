@@ -1,8 +1,12 @@
 import os
+import tiktoken
 from dotenv import load_dotenv
 from openai import OpenAI
 
 load_dotenv(override=True)
+
+# L'initialisation du client est conservée pour la cohérence, 
+# même si elle ne sert pas pour le comptage local de tiktoken.
 client = OpenAI(
     api_key=os.environ["OPENAI_API_KEY"].strip()
 )
@@ -27,11 +31,15 @@ selected_model = "gpt-5.6-sol"
 
 print(f"=== Étape 1 : Comptage des tokens par fichier avec le modèle OpenAI '{selected_model}' ===\n")
 
+# Recherche de l'encodage correct
 try:
-    import tiktoken
+    # Si le modèle est reconnu par tiktoken
     encoding = tiktoken.encoding_for_model(selected_model)
-except Exception:
-    encoding = tiktoken.get_encoding("cl100k_base")
+except KeyError: # tiktoken lève une KeyError si le modèle est inconnu
+    # Fallback sur l'encodage par défaut des modèles récents
+    # Note: o200k_base est l'encodage des modèles récents (4o, etc.), 
+    # cl100k_base est pour les anciens (gpt-3.5/gpt-4). 
+    encoding = tiktoken.get_encoding("o200k_base") 
 
 total_tokens_count = 0
 
