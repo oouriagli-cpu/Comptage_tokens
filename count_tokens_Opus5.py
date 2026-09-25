@@ -1,9 +1,12 @@
 import logging
+import os
 from dotenv import load_dotenv
 from anthropic import Anthropic
 
-load_dotenv()
-client = Anthropic()
+load_dotenv(override=True)
+client = Anthropic(
+    api_key=os.environ["ANTHROPIC_API_KEY"].strip()
+)
 
 # Liste des deux fichiers texte à traiter
 file_paths = ["10000_prompts_fr.txt", "10000_prompts_en.txt"]
