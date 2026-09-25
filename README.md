@@ -27,7 +27,7 @@ Pour consulter le guide détaillé étape par étape sur la création et la séc
 * **Anthropic Claude** : `count_tokens_Opus5.py`
 * **OpenAI ChatGPT** : `count_tokens_Sol56.py`
 
-Pour changer le nom du modèle, entrer son nom technique.
+Pour changer le nom du modèle, entrez son nom technique dans la variable 'selected_model'.
 
 ---
 
