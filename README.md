@@ -21,11 +21,13 @@ Pour consulter le guide détaillé étape par étape sur la création et la séc
 
 ---
 
-## Exécution des scripts
+## Scripts disponibles
 
-* **Google Gemini** : `python count_tokens_Flash38.py`
-* **Anthropic Claude** : `python count_tokens_Opus5.py`
-* **OpenAI ChatGPT** : `python count_tokens_Sol56.py`
+* **Google Gemini** : `count_tokens_Flash38.py`
+* **Anthropic Claude** : `count_tokens_Opus5.py`
+* **OpenAI ChatGPT** : `count_tokens_Sol56.py`
+
+Pour changer le nom du modèle, entrer son nom technique.
 
 ---
 
