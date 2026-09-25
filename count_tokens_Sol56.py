@@ -2,8 +2,10 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
-load_dotenv()
-client = OpenAI()
+load_dotenv(override=True)
+client = OpenAI(
+    api_key=os.environ["OPENAI_API_KEY"].strip()
+)
 
 # Liste des deux fichiers texte à traiter
 file_paths = ["10000_prompts_fr.txt", "10000_prompts_en.txt"]
