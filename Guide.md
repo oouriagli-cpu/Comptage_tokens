@@ -1,7 +1,7 @@
 # 🔑 Guide Détaillé : Gestion & Obtention des Clés API
 
 Ce guide explique étape par étape comment obtenir vos clés d'API pour les différents fournisseurs de modèles de langage (LLM) et comment les configurer en toute sécurité dans votre fichier local `.env`.
-Les clés ne sont pas gratuites : tarif de départ 5 dollars US.
+Les clés ne sont pas gratuites : tarif de départ 5 dollars US sauf pour la clé API Gemini mais avec une utilisation quotidienne restreinte.
 
 ---
 
